@@ -65,7 +65,7 @@
 - ## 2.) Long Extensions  
 
 <div align="center">
-  <img src="./img/long.png" width=80%>
+   <img src="./img/long2.png" width=80%>  
 </div>
 
 <details>
@@ -78,6 +78,9 @@
     public static bool IsPrime(this long source)
     {
       var result = true;
+
+      if (source <= 3)
+        return true;
 
       if (source <= 1 || source % 2 == 0 || source % 3 == 0)
         result = false;

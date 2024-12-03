@@ -6,10 +6,14 @@ public static class LongExtensions
   {
     var result = true;
 
+    if (source <= 3)
+      return true;
+
     if (source <= 1 || source % 2 == 0 || source % 3 == 0)
       result = false;
     else if (source <= 3 || source == 2)
       result = true;
+
     else
     {
       int i = 5;

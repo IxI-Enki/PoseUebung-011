@@ -15,7 +15,7 @@
 
 <details>
   
-  <summary> $\small\color{gray}{click\ 4\ }\Large\color{lime}{code\ to\ copy}$ </summary>
+  <summary> $\small\color{gray}{click\ for\ }\Large\color{lime}{code\ to\ copy}$ </summary>
 
   ```c#
   public static class StringExtensions
@@ -70,8 +70,8 @@
 
 <details>
   
-  <summary> $\small\color{gray}{click\ 4\ }\Large\color{lime}{code\ to\ copy}$ </summary>
-
+  <summary> $\small\color{gray}{click\ for\ }\Large\color{lime}{code\ to\ copy}$ </summary>
+  
   ```c#
   public static class LongExtensions
   {
@@ -113,7 +113,7 @@
 
 <details>
   
-  <summary> $\small\color{gray}{click\ 4\ }\Large\color{lime}{code\ to\ copy}$ </summary>
+  <summary> $\small\color{gray}{click\ for\ }\Large\color{lime}{code\ to\ copy}$ </summary>
 
   ```c#
   public static class IEnumerableExtensions

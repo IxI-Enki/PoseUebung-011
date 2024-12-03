@@ -65,7 +65,7 @@
 - ## 2.) Long Extensions  
 
 <div align="center">
-   <img src="./img/long2.png" width=80%>  
+   <img src="./img/long.png" width=80%>  
 </div>
 
 <details>
@@ -75,33 +75,24 @@
   ```c#
   public static class LongExtensions
   {
-    public static bool IsPrime(this long source)
+     public static bool IsPrime(this long source)
     {
-      var result = true;
-
+      if (source <= 1)
+        return false;
       if (source <= 3)
         return true;
+      if (source % 2 == 0 || source % 3 == 0)
+        return false;
 
-      if (source <= 1 || source % 2 == 0 || source % 3 == 0)
-        result = false;
+      int i = 5;
 
-      else if (source <= 3 || source == 2)
-        result = true;
-
-      else
+      while (i * i <= source)
       {
-        int i = 5;
-
-        while (i * i <= source && !result)
-        {
-          if (source % i == 0 || source % (i + 2) == 0)
-            result = false;
-
-          i += 6;
-        }
-        result = true;
+        if (source % i == 0 || source % (i + 2) == 0)
+          return false;
+        i += 6;
       }
-      return result;
+      return true;
     }
   }
   ```

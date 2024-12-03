@@ -11,7 +11,6 @@ public static class StringExtensions
     {
       if (char.IsDigit(c))
         digits += c;
-
       if (digits.Length > 0)
         result = Convert.ToInt64(digits);
     }
@@ -25,7 +24,6 @@ public static class StringExtensions
 
     if (digits.Length > 0)
       result = Convert.ToInt64(digits);
-
     return result;
   }
 
@@ -35,7 +33,6 @@ public static class StringExtensions
   {
     foreach (char c in source)
       action?.Invoke(c);
-
     return source;
   }
 }

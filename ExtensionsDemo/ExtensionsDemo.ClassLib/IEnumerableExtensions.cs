@@ -9,7 +9,6 @@ public static class IEnumerableExtensions
     foreach (var item in source)
       if (filter == null || filter(item))
         result.Add(item);
-
     return result;
   }
 
@@ -22,7 +21,6 @@ public static class IEnumerableExtensions
     {
       if (itemCount >= count)
         result.Add(item);
-
       itemCount++;
     }
     return result;

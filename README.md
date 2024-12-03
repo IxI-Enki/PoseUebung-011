@@ -65,7 +65,7 @@
 - ## 2.) Long Extensions  
 
 <div align="center">
-<!--  <img src="./img/long.png" width=80%> -->
+   <img src="./img/long.png" width=80%>  
 </div>
 
 <details>
